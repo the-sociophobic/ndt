@@ -1,0 +1,29 @@
+{
+  "name": "logo_parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "the_sociophobic",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "date-fns": "^2.16.1",
+    "lodash": "^4.17.20",
+    "react": "^16.0.0",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
+    "regenerator-runtime": "^0.13.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "cssnano": "^4.1.10",
+    "sass": "^1.22.12"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "dev": "parcel example.html",
+    "build": "parcel build ./src/index.js"
+  }
+}

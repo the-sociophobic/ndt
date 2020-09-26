@@ -1,0 +1,70 @@
+.lev-schedule-container
+
+
+$default-transition: .2s
+$dark: #333333
+$main: #B53A1E
+  
+.lev-schedule
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-flow: wrap
+  &__spekt
+    // width: 416px
+    width: 336px
+    margin-right: 32px
+    &:nth-child(3n + 2)
+      margin-right: 0px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 60px
+    &__to, a.lev-schedule__spekt__to
+      text-decoration: none
+      cursor: pointer
+      &__img
+        width: 100%
+        margin-bottom: 15px
+        opacity: .8
+        transition: opacity $default-transition
+      &__name
+        text-align: center
+        margin-bottom: 7px
+        text-transform: none !important
+        font-size: 24px !important
+        line-height: 26px
+        font-weight: 700
+      &__dates
+        text-align: center
+        text-transform: uppercase
+        font-size: 14px
+        margin-bottom: 18px
+      &__name,
+      &__dates
+        text-decoration: none !important
+        color: $dark
+        transition: color $default-transition !important
+      &:hover &__name,
+      &:hover &__dates
+        text-decoration: none !important
+        color: $main
+        transition: color $default-transition !important
+      &:hover &__img
+        opacity: 1
+        
+    &__button
+      padding: 0 18px
+      font-size: 12px
+      line-height: 32px
+      text-transform: uppercase
+      color: white
+      font-weight: 700
+      background-color: $main
+      cursor: pointer
+      transition: padding $default-transition
+      &:hover
+        padding: 0 42px
+
+      

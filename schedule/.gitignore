@@ -1,0 +1,14 @@
+logs
+*.log
+npm-debug.log*
+.DS_Store
+.cache
+
+coverage
+node_modules
+build
+dist
+public/static
+.env.*.local
+.env
+.lock
