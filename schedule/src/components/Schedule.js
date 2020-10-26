@@ -34,7 +34,7 @@ export default class Schedule extends React.Component {
     const months = (await axios
       .get('https://apit.bileter.ru/8e665805311706860c2ef141d3dc13e2/afisha?json=1'))
       .data
-    const currentMonth = months[Object.keys(months)[1]]
+    const currentMonth = months[Object.keys(months)[0]]
     let dates = {}, performances = []
 
     _.forOwn(currentMonth, (date, dateName) => {
